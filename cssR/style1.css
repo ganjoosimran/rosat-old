@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+body
+{
+    background-color:#0E4B90;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans' , sans-serif;
+
+
+}
+.container{
+  margin-top: 50px;;
+  background-color:white;
+  width: 95%;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 50px;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 30px;
+ box-shadow: 0 10px 20px 0 white, 0 10px 80px 0 white,0 10px 20px 0 white,0 10px 20px 0 white;
+}
+h3{
+  padding-left: 30px;
+
+}
+hr{
+
+     background-color:#CCC;
+}
+.personal{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+.div1{
+  margin-left: 80px;
+}
+.div2{
+  margin-left: 80px;
+}
+.div3{
+  margin-left: 80px;
+}
+.div4{
+  margin-left: 80px;
+}
+.div5{
+  margin-left: 80px;
+}
+.div611{
+  margin-left: 100px;
+}
+.div61{
+  margin-left: 80px;
+}
+.div62{
+  margin-left: 80px;
+}
+.div621{
+  margin-left: 100px;
+}
+.div7{
+    margin-left: 80px;
+}
+.div81{
+    margin-left: 80px;
+}
+.div811{
+    margin-left: 100px;
+}
+.div82{
+    margin-left: 80px;
+}
+.div821{
+  margin-left: 100px;
+}
+.div91{
+    margin-left: 80px;
+}
+.div911{
+    margin-left: 100px;
+}
+.div92{
+    margin-left: 80px;
+  }
+.div921{
+  margin-left: 100px;
+}
+.btn{
+  margin-left: 45%;
+  margin-bottom: 50px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #0E4B90;
+    margin: 1em 0;
+    padding: 0;
+}

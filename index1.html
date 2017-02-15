@@ -1,0 +1,903 @@
+<html lang="en">
+<head>
+  <title>ROSAT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="cssR/style1.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/script1.js"></script>
+
+  </head>
+
+
+<body>
+  <div class="container">
+    <!-- personal details here-->
+    <h3>Personal Details</h3>
+    <hr>
+  <div class="personal">
+    <form method="post" onsubmit="return validateForm(this);" class="list-form">
+    <h4><strong>Student's Details</strong></h4>
+      <hr>
+    <div class="div1">
+    <div class="form-group row">
+      <label for="text-input">Student's Name</label>
+        <div class="col-10">
+          <input class="form-control" type="text" placeholder="Enter your name" required>
+        </div>
+    </div>
+    <fieldset class="form-group">
+    <legend>Gender</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" name="optionsRadios" value="option1" checked>
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" name="optionsRadios" value="option2">
+        Female
+      </label>
+    </div>
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" name="optionsRadios" value="option3">
+        Other
+      </label>
+    </div>
+  </fieldset>
+  <div class="form-group">
+    <label for="usn-input">USN</label>
+    <input type="text" class="form-control" placeholder="Enter USN">
+  </div>
+  <div class="form-group">
+   <label for="InputEmail1">Email address</label>
+   <input type="email" class="form-control"  placeholder="Enter email">
+   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+ </div>
+ <div class="form-group">
+   <label for="phone-input">Phone No</label>
+   <input type="tel" class="form-control" placeholder="Phone No.">
+ </div>
+ <div class="form-group row">
+ <label for="date-input" class="col-2 col-form-label">Date of Birth</label>
+ <div class="col-10">
+   <input class="form-control" type="date" placeholder ="yyyy-mm-dd">
+ </div>
+ <br>
+</div>
+</div>
+
+<!-- Father's Details-->
+
+ <h4><strong>Father's Details</strong></h4>
+ <hr>
+ <div class="div2">
+ <div class="form-group row">
+ <label for="text-input">Father's Name</label>
+  <div class="col-10">
+   <input class="form-control" type="text" placeholder="Father's name">
+   </div>
+ </div>
+ <div class="form-group">
+     <label for="Select1">Qualification</label>
+     <select class="form-control" >
+       <option>Doctrate</option>
+       <option>PG</option>
+       <option>UG</option>
+       <option>Higher Secondary</option>
+       <option>Diploma</option>
+       <option>Matriculation</option>
+       <option>Below Matriculation</option>
+       <option>No Formal Education</option>
+     </select>
+   </div>
+   <div class="form-group">
+       <label for="Select1">Occupation</label>
+       <select class="form-control" >
+         <option>Profesional</option>
+         <option>Business</option>
+         <option>Government Services</option>
+         <option>No Employement</option>
+       </select>
+     </div>
+<div class="form-group">
+ <label for="text-input">Annual income</label>
+ <input type="text" class="form-control"  placeholder="Enter anual income">
+</div>
+<div class="form-group">
+ <label for="InputEmail1">Email address</label>
+ <input type="email" class="form-control"  placeholder="Enter email">
+ <small  class="form-text text-muted">We'll never share this email with anyone else.</small>
+</div>
+<div class="form-group">
+  <label for="phone-input">Phone No</label>
+  <input type="tel" class="form-control" placeholder="Phone No.">
+</div>
+</div>
+<br>
+
+<!--Mother's Details-->
+
+<h4><strong>Mother's Details</strong></h4>
+<hr>
+<div class="div3">
+<div class="form-group row">
+<label for="text-input">Mother's Name</label>
+ <div class="col-10">
+  <input class="form-control" type="text" placeholder="Mother's name">
+  </div>
+</div>
+<div class="form-group">
+    <label for="Select1">Qualification</label>
+    <select class="form-control" >
+      <option>Doctrate</option>
+      <option>PG</option>
+      <option>UG</option>
+      <option>Higher Secondary</option>
+      <option>Diploma</option>
+      <option>Matriculation</option>
+      <option>Below Matriculation</option>
+      <option>No Formal Education</option>
+    </select>
+  </div>
+  <div class="form-group">
+      <label for="Select1">Occupation</label>
+      <select class="form-control" >
+        <option>Profesional</option>
+        <option>Business</option>
+        <option>Government Services</option>
+        <option>Home Maker</option>
+      </select>
+    </div>
+<div class="form-group">
+<label for="text-input">Annual income</label>
+<input type="text" class="form-control"  placeholder="Enter anual income">
+</div>
+<div class="form-group">
+<label for="InputEmail1">Email address</label>
+<input type="email" class="form-control"  placeholder="Enter email">
+<small id="emailHelp" class="form-text text-muted">We'll never share this email with anyone else.</small>
+</div>
+<div class="form-group">
+ <label for="phone-input">Phone No</label>
+ <input type="tel" class="form-control" placeholder="Phone No.">
+</div>
+</div>
+<br>
+
+<!--Permanenet Addresss-->
+
+<h4><strong>Permanent address</strong></h4>
+<hr>
+<div class="div4">
+<div class="form-group row">
+<label for="text-input">District</label>
+ <div class="col-10">
+  <input class="form-control" type="text" placeholder="Enter District">
+  </div>
+</div>
+<div class="form-group">
+ <label for="text-input">Pin-Code</label>
+ <input type="text" class="form-control"  placeholder="Enter pin-code">
+</div>
+<div class="form-group">
+    <label for="Select1">State</label>
+    <select class="form-control" >
+      <option>Andaman & NIcobar Islands</option>
+      <option>Andhra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chandigarh</option>
+      <option>Chattisgarh</option>
+      <option>Dadra And Nagar Haveli</option>
+      <option>Daman and Diu</option>
+      <option>New Delhi</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu & Kashmir</option>
+      <option>Jharkhand</option>
+      <option>Krnataka</option>
+      <option>Kerela</option>
+      <option>Lakshadweep</option>
+      <option>Madhya Pradesh</option>
+      <option>Maharashtra</option>
+      <option>Manipur</option>
+      <option>Meghalaya</option>
+      <option>Mizoram</option>
+      <option>Nagaland</option>
+      <option>Odisha</option>
+      <option>Puducherry</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Sikkim</option>
+      <option>Tamil Nadu</option>
+      <option>Telangana</option>
+      <option>Tripura</option>
+      <option>Uttar Pradesh</option>
+      <option>Uttarakhand</option>
+      <option>West Bengal</option>
+    </select>
+  </div>
+  <fieldset class="form-group">
+  <legend>Area</legend>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option1" checked>
+      Urban
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option2">
+      Rural
+    </label>
+  </div>
+</fieldset>
+</div>
+<br>
+
+
+<!--Present Address-->
+
+<h4><strong>Present address</strong></h4>
+<hr>
+<div class="div5">
+<div class="form-group row">
+<label for="text-input">District</label>
+ <div class="col-10">
+  <input class="form-control" type="text" placeholder="Enter District">
+  </div>
+</div>
+<div class="form-group">
+ <label for="text-input">Pin-Code</label>
+ <input type="text" class="form-control"  placeholder="Enter pin-code">
+</div>
+<div class="form-group">
+    <label for="Select1">State</label>
+    <select class="form-control" >
+      <option>Andaman & NIcobar Islands</option>
+      <option>Andhra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chandigarh</option>
+      <option>Chattisgarh</option>
+      <option>Dadra And Nagar Haveli</option>
+      <option>Daman and Diu</option>
+      <option>New Delhi</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu & Kashmir</option>
+      <option>Jharkhand</option>
+      <option>Krnataka</option>
+      <option>Kerela</option>
+      <option>Lakshadweep</option>
+      <option>Madhya Pradesh</option>
+      <option>Maharashtra</option>
+      <option>Manipur</option>
+      <option>Meghalaya</option>
+      <option>Mizoram</option>
+      <option>Nagaland</option>
+      <option>Odisha</option>
+      <option>Puducherry</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Sikkim</option>
+      <option>Tamil Nadu</option>
+      <option>Telangana</option>
+      <option>Tripura</option>
+      <option>Uttar Pradesh</option>
+      <option>Uttarakhand</option>
+      <option>West Bengal</option>
+    </select>
+  </div>
+  <fieldset class="form-group">
+  <legend>Area</legend>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option1" checked>
+      Urban
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option2">
+      Rural
+    </label>
+  </div>
+</fieldset>
+<br>
+</div>
+
+
+<!--Education Details-->
+
+<h4><strong>Education Details</strong></h4>
+<hr>
+
+<!--Class 10th-->
+<div class="div61">
+
+<h4><strong>Class 10th</strong></h4>
+<br>
+<div class="div611">
+<fieldset class="form-group">
+<div class="form-check">
+  <div class="form-group">
+   <label for="text-input">Score</label>
+   <input type="text" class="form-control"  placeholder="Enter Score">
+  </div>
+  <div>
+  <label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option1" checked>
+    GPA
+  </label>
+</div>
+<div class="form-check">
+<label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option2">
+    Grade
+  </label>
+</div>
+</div>
+</fieldset>
+<div class="element-radio">
+    <label class="title">Board</label>
+    <div class="column column2">
+        <label>
+            <input type="radio" name="children" value="Yes" onChange="findselected()"/>
+            <span>CBSE</span>
+        </label>
+    </div>
+    <div class="column column2">
+        <label>
+            <input type="radio" name="children" value="Yes" onChange="findselected()"/>
+            <span>ICSE</span>
+        </label>
+    </div>
+    <span class="clearfix"></span>
+
+    <div class="column column2">
+        <label>
+            <input type="radio"  name="children" value="No" checked="checked" onChange="findselected()"/>
+            <span>State</span>
+            <div class="form-group">
+             <input type="text" id="inputtext" class="form-control"  placeholder="Enter state">
+            </div>
+        </label>
+    </div>
+    <span class="clearfix"></span>
+</div>
+
+<div class="form-group">
+    <label for="Select1">State</label>
+    <select class="form-control" >
+      <option>Andaman & NIcobar Islands</option>
+      <option>Andhra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chandigarh</option>
+      <option>Chattisgarh</option>
+      <option>Dadra And Nagar Haveli</option>
+      <option>Daman and Diu</option>
+      <option>New Delhi</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu & Kashmir</option>
+      <option>Jharkhand</option>
+      <option>Krnataka</option>
+      <option>Kerela</option>
+      <option>Lakshadweep</option>
+      <option>Madhya Pradesh</option>
+      <option>Maharashtra</option>
+      <option>Manipur</option>
+      <option>Meghalaya</option>
+      <option>Mizoram</option>
+      <option>Nagaland</option>
+      <option>Odisha</option>
+      <option>Puducherry</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Sikkim</option>
+      <option>Tamil Nadu</option>
+      <option>Telangana</option>
+      <option>Tripura</option>
+      <option>Uttar Pradesh</option>
+      <option>Uttarakhand</option>
+      <option>West Bengal</option>
+    </select>
+  </div>
+    <div class="element-radio">
+      <label class="title">Medium of instruction</label>
+      <div class="column column11">
+          <label>
+              <input type="radio" name="childrenc" value="Yes" onChange="findselectedc()"/>
+              <span>English</span>
+          </label>
+      </div>
+    <div class="column column12">
+          <label>
+              <input type="radio"  name="childrenc" value="No" checked="checked" onChange="findselectedc()"/>
+              <span>Local</span>
+              <div class="form-group">
+               <input type="text" id="inputtextc" class="form-control"  placeholder="Mention">
+              </div>
+          </label>
+      </div>
+      <span class="clearfix"></span>
+  </div>
+  <fieldset class="form-group">
+  <legend>Area</legend>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option1" checked>
+      Urban
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option2">
+      Rural
+    </label>
+  </div>
+</fieldset>
+</div>
+</div>
+<!--Class 10th-->
+
+
+<div class="div62">
+<h4><strong>Class 12th</strong></h4>
+<br>
+<div class="div621">
+<div class="form-group row">
+<label for="text-input">Specification</label>
+ <div class="col-10">
+  <input class="form-control" type="text" placeholder="Enter Specification">
+  </div>
+</div>
+<fieldset class="form-group">
+<div class="form-check">
+  <div class="form-group">
+   <label for="text-input">Score</label>
+   <input type="text" class="form-control"  placeholder="Enter Score">
+  </div>
+  <div>
+  <label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option1" checked>
+    GPA
+  </label>
+</div>
+<div class="form-check">
+<label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option2">
+    Grade
+  </label>
+</div>
+</div>
+</fieldset>
+<div class="element-radio">
+    <label class="title">Board</label>
+    <div class="column column2">
+        <label>
+            <input type="radio" name="childreng" value="Yes" onChange="findselectedg()"/>
+            <span>CBSE</span>
+        </label>
+    </div>
+    <div class="column column2">
+        <label>
+            <input type="radio" name="childreng" value="Yes" onChange="findselectedg()"/>
+            <span>ICSE</span>
+        </label>
+    </div>
+    <span class="clearfix"></span>
+
+    <div class="column column2">
+        <label>
+            <input type="radio"  name="childreng" value="No" checked="checked" onChange="findselectedg()"/>
+            <span>State</span>
+            <div class="form-group">
+             <input type="text" id="inputtextg" class="form-control"  placeholder="Enter state">
+            </div>
+        </label>
+    </div>
+    <span class="clearfix"></span>
+</div>
+<div class="form-group">
+    <label for="Select1">State</label>
+    <select class="form-control" >
+      <option>Andaman & NIcobar Islands</option>
+      <option>Andhra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chandigarh</option>
+      <option>Chattisgarh</option>
+      <option>Dadra And Nagar Haveli</option>
+      <option>Daman and Diu</option>
+      <option>New Delhi</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu & Kashmir</option>
+      <option>Jharkhand</option>
+      <option>Krnataka</option>
+      <option>Kerela</option>
+      <option>Lakshadweep</option>
+      <option>Madhya Pradesh</option>
+      <option>Maharashtra</option>
+      <option>Manipur</option>
+      <option>Meghalaya</option>
+      <option>Mizoram</option>
+      <option>Nagaland</option>
+      <option>Odisha</option>
+      <option>Puducherry</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Sikkim</option>
+      <option>Tamil Nadu</option>
+      <option>Telangana</option>
+      <option>Tripura</option>
+      <option>Uttar Pradesh</option>
+      <option>Uttarakhand</option>
+      <option>West Bengal</option>
+    </select>
+  </div>
+    <div class="element-radio">
+      <label class="title">Medium of instruction</label>
+      <div class="column column11">
+          <label>
+              <input type="radio" name="childrena" value="Yes" onChange="findselecteda()"/>
+              <span>English</span>
+          </label>
+      </div>
+    <div class="column column12">
+          <label>
+              <input type="radio"  name="childrena" value="No" checked="checked" onChange="findselecteda()"/>
+              <span>Local</span>
+              <div class="form-group">
+               <input type="text" id="inputtexta" class="form-control"  placeholder="Mention">
+              </div>
+          </label>
+      </div>
+      <span class="clearfix"></span>
+  </div>
+  <fieldset class="form-group">
+  <legend>Area</legend>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option1" checked>
+      Urban
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" name="optionsRadios" value="option2">
+      Rural
+    </label>
+  </div>
+</fieldset>
+</div>
+</div>
+
+<!-- Admission Details-->
+<br>
+<h4><strong>Admission Details</strong></h4>
+<hr>
+<div class="div7">
+<fieldset class="form-group">
+<legend>Qualifying Exam</legend>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option1" checked>
+    CET
+  </label>
+</div>
+<div class="form-check">
+<label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option2">
+    Comed-K
+  </label>
+</div>
+<div class="form-check">
+<label class="form-check-label">
+    <input type="radio" name="optionsRadios" value="option3">
+    None
+  </label>
+</div>
+</fieldset>
+<div class="form-group">
+ <label for="text-input">Score</label>
+ <input type="text" class="form-control"  placeholder="Score">
+ <label for="text-input">Rank</label>
+ <input type="text" class="form-control"  placeholder="Rank">
+</div>
+<div class="form-group">
+    <label for="Select1">Admitted under quota</label>
+    <select class="form-control" >
+      <option>Rural Candidates</option>
+      <option>Kannada Medium</option>
+      <option>Jammu and Kashmiri Migrants</option>
+      <option>OBC/SC/ST under category - 1, 2A, 2B, 3A, 3B</option>
+      <option>Defence Personnel of Karnataka Origin</option>
+      <option>Sports Special Category</option>
+      <option>Scouts and Guides</option>
+      <option>NCC Category</option>
+      <option>Supernumerary Category</option>
+  </select>
+  </div>
+  <div class="form-group">
+   <label for="text-input">Nationality</label>
+   <input type="text" class="form-control"  placeholder="Nationality">
+  </div>
+  <div class="form-group">
+      <label for="Select1">Religion</label>
+      <select class="form-control" >
+        <option>Hindu</option>
+        <option>Muslim</option>
+        <option>Sikh</option>
+        <option>Christian</option>
+        <option>Jain</option>
+        <option>Buddhist</option>
+        <option>Judaism</option>
+      </select>
+    </div>
+    <div class="form-group">
+     <label for="text-input">Caste</label>
+     <input type="text" class="form-control"  placeholder="Caste">
+    </div>
+    <div class="form-group">
+        <label for="Select1">Category</label>
+        <select class="form-control" >
+          <option>Gen</option>
+          <option>Obc</option>
+          <option>SC</option>
+          <option>ST</option>
+          <option>Sbc</option>
+         </select>
+      </div>
+    </div>
+
+<br>
+  <!--Curricular, Co-curricular, extra-curricular information-->
+
+<h4><strong>Curricular, Co-curricular, extra-curricular information</strong></h4>
+<hr>
+<div class="div81">
+<h4><strong>Curricular</strong></h4>
+<div class="div811">
+<div class="element-radio">
+    <label class="title">Awards</label>
+    <div class="column column11">
+        <label>
+            <input type="radio" name="childrend" value="Yes" onChange="findselectedd()"/>
+            <span>Best Student</span>
+        </label>
+    </div>
+    <div class="column column11">
+        <label>
+            <input type="radio" name="childrend" value="Yes" onChange="findselectedd()"/>
+            <span>School Captain</span>
+        </label>
+    </div>
+    <div class="column column11">
+        <label>
+            <input type="radio" name="childrend" value="Yes" onChange="findselectedd()"/>
+            <span>House/Club Captain</span>
+        </label>
+    </div>
+    <div class="column column12">
+        <label>
+            <input type="radio"  name="childrend" value="No" checked="checked" onChange="findselectedd()"/>
+            <span>Other</span>
+            <div class="form-group">
+             <input type="text" id="inputtextd" class="form-control"  placeholder="Mention">
+            </div>
+        </label>
+    </div>
+    <span class="clearfix"></span>
+</div>
+<div class="form-group">
+    <label for="InputFile">Attach file</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+  </div>
+</div>
+</div>
+
+<!--- co - curricular-->
+
+
+  <div class="div82">
+  <h4><strong>Co-Curricular</strong></h4>
+  <div class="div821">
+  <div class="form-group">
+   <label for="text-input">Name Technical Skill</label>
+   <input type="text" class="form-control"  placeholder="Technical Skill ">
+  </div>
+  <div class="element-radio">
+      <label class="title">Type</label>
+      <div class="column column11">
+          <label>
+              <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+              <span>Training</span>
+          </label>
+      </div>
+      <div class="column column11">
+          <label>
+              <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+              <span>Workshop</span>
+          </label>
+      </div>
+      <div class="column column11">
+          <label>
+              <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+              <span>Certification Course</span>
+          </label>
+      </div>
+      <div class="column column11">
+          <label>
+              <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+              <span>Self Trained</span>
+          </label>
+      </div>
+      <div class="column column12">
+          <label>
+              <input type="radio"  name="childrene" value="No" checked="checked" onChange="findselectede()"/>
+              <span>Other</span>
+              <div class="form-group">
+               <input type="text" id="inputtexte" class="form-control"  placeholder="Mention">
+              </div>
+          </label>
+      </div>
+      <span class="clearfix"></span>
+  </div>
+  <div class="form-group">
+      <label for="InputFile">Attach file</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+      <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+    </div>
+
+
+    <div class="form-group">
+     <label for="text-input">Inter-school/ inter college Competition</label>
+     <input type="text" class="form-control"  placeholder="Technical Skill ">
+    </div>
+    <div class="element-radio">
+        <label class="title">Type</label>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                <span>Technical/Science Quiz</span>
+            </label>
+        </div>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                <span>Debate</span>
+            </label>
+        </div>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                <span>Group discussion</span>
+            </label>
+        </div>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                <span>Essay writing</span>
+            </label>
+        </div>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                <span>Paper presentation, Science projects</span>
+            </label>
+        </div>
+        <div class="column column12">
+            <label>
+                <input type="radio"  name="childrenf" value="No" checked="checked" onChange="findselectedf()"/>
+                <span>Other</span>
+                <div class="form-group">
+                 <input type="text" id="inputtextf" class="form-control"  placeholder="Mention">
+                </div>
+            </label>
+        </div>
+        <span class="clearfix"></span>
+    </div>
+    <div class="form-group">
+        <label for="InputFile">Attach file</label>
+        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+        <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+      </div>
+</div>
+</div>
+<br>
+
+<!-- Extra curricular-->
+
+  <h4><strong>Extra-Curricular</strong></h4>
+  <hr>
+  <div class="div91">
+      <h4><strong>Sports</strong></h4>
+      <div class="div911">
+      <div class="form-group">
+       <label for="text-input">Name</label>
+       <input type="text" class="form-control"  placeholder="Sport">
+      </div>
+      <div class="form-group">
+          <label for="Select1">Capacity at which you participated</label>
+          <select class="form-control" >
+            <option>Inter-school/Inter-state</option>
+            <option>Taluk</option>
+            <option>District</option>
+            <option>State</option>
+            <option>National</option>
+            <option>International</option>
+            <option>None</option>
+           </select>
+        </div>
+      <div class="form-group">
+          <label for="InputFile">Attach file</label>
+          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+        </div>
+</div>
+</div>
+<div class="div92">
+        <h4><strong>Cultural</strong></h4>
+        <div class="div921">
+        <div class="form-group">
+         <label for="text-input">Name(Discipline: singing, instrumental, Dance, theaters)</label>
+         <input type="text" class="form-control"  placeholder="Sport">
+        </div>
+        <div class="form-group">
+            <label for="InputFile">Attach file for certification if any</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+          </div>
+        <div class="form-group">
+            <label for="Select1">Capacity at which you participated</label>
+            <select class="form-control" >
+              <option>Inter-school/Inter-state</option>
+              <option>Taluk</option>
+              <option>District</option>
+              <option>State</option>
+              <option>National</option>
+              <option>International</option>
+              <option>None</option>
+             </select>
+          </div>
+        <div class="form-group">
+            <label for="InputFile">Attach file</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+<br>
+<br>
+<button type="submit" class="btn btn-info">Submit</button>
+
+</form>
+</div>
+</div>
+</body>
+</html>
